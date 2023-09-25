@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter And Ducks</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="img/target.png">
+    <link rel="shortcut icon" href="img/target.png">
+    <!-- <script src="chrome-extension://ocggccaacacpienfcgmgcihoombokbbj/pages/client/livestartpage-message-add.js"></script> -->
+</head>
+<body>
+    <!-- <audio controls autoplay loop>
+        <source src="audio/1-title.mp3" type="audio/mpeg">
+    </audio> -->
+    <div class="duck duck1">
+        <input type="checkbox" id="duck1">
+        <label for="duck1"></label>
+    </div>
+    <div class="duck duck2">
+        <input type="checkbox" id="duck2">
+        <label for="duck2"></label>
+    </div>
+    <div class="duck duck3">
+        <input type="checkbox" id="duck3">
+        <label for="duck3"></label>
+    </div>
+    <div class="duck duck4">
+        <input type="checkbox" id="duck4">
+        <label for="duck4"></label>
+    </div>
+    <div class="count">
+        <button onclick="play()">Play Audio</button>
+        <audio src="audio/1-title.mp3" preload="auto" controls>
+            <a href="audio/1-title.mp3"> Download audio </a>
+        </audio>
+        Сбили: </div>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script> -->
+<!-- <script>
+    var sound = new Howl({
+    src: ['audio.mp3'],
+    autoplay: true,
+    loop: true,
+    });
+    sound.play();
+</script> -->
+    <script>
+    var audio = new Audio('audio_file.mp3');
+audio.play();
+    function play() {
+var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
+audio.play();
+}
+    </script>
+</body>
+</html>
